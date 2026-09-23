@@ -15,7 +15,7 @@ import Pregnancy from './pages/Pregnancy';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/stitch_aarogyasathi_rural_health_portal">
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/home" element={<Home />} />
