@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Accessibility: Large Text */
+html.a11y-large-text {
+  zoom: 1.15;
+}
+
+/* Accessibility: High Contrast */
+html.a11y-high-contrast body {
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+html.a11y-high-contrast .text-on-surface,
+html.a11y-high-contrast .text-on-surface-variant,
+html.a11y-high-contrast .text-on-primary-variant,
+html.a11y-high-contrast .text-on-secondary-variant,
+html.a11y-high-contrast .text-on-tertiary-variant,
+html.a11y-high-contrast .text-on-primary-two,
+html.a11y-high-contrast .text-on-error-container,
+html.a11y-high-contrast .text-on-tertiary-fixed,
+html.a11y-high-contrast .text-on-primary-fixed,
+html.a11y-high-contrast .text-on-secondary-fixed {
+  color: #0a0a0a !important;
+}
+html.a11y-high-contrast .text-primary-fixed,
+html.a11y-high-contrast .text-secondary-fixed,
+html.a11y-high-contrast .text-tertiary-fixed {
+  color: #0a0a0a !important;
+}
+html.a11y-high-contrast .text-primary {
+  color: #00502f !important;
+}
+html.a11y-high-contrast .text-secondary {
+  color: #00504a !important;
+}
+html.a11y-high-contrast .text-tertiary {
+  color: #10456b !important;
+}
+html.a11y-high-contrast .bg-background,
+html.a11y-high-contrast .bg-surface,
+html.a11y-high-contrast .bg-surface-container-lowest,
+html.a11y-high-contrast .bg-surface-container-low,
+html.a11y-high-contrast .bg-surface-container-high,
+html.a11y-high-contrast .bg-surface-container-highest {
+  background-color: #ffffff !important;
+}
+html.a11y-high-contrast .border-outline-variant {
+  border-color: #444444 !important;
+}

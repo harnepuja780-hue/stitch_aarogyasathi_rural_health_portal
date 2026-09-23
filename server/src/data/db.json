@@ -1,0 +1,30 @@
+{
+  "users": {
+    "9999999999": {
+      "mobile": "9999999999",
+      "createdAt": 1790104985530,
+      "firstLoginAt": 1790103042461,
+      "updatedAt": 1790104985530,
+      "name": ""
+    }
+  },
+  "otps": {},
+  "sessions": {
+    "8e9aff87834c45124d665e3839255f77ddabc28c8b4c2dbcec9f9944f819f257": {
+      "mobile": "9999999999",
+      "createdAt": 1790104788523,
+      "expiresAt": 1792696788523
+    },
+    "c14f9fd40ef2c9dfcd8e1a2861a9417d553add384d1e1458bc9cf782ae09adfe": {
+      "mobile": "9999999999",
+      "createdAt": 1790104985531,
+      "expiresAt": 1792696985531
+    }
+  },
+  "counters": {
+    "otp:9999999999": {
+      "count": 2,
+      "resetAt": 1790105688098
+    }
+  }
+}

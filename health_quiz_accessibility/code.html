@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html lang="mr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>आरोग्यसाथी | AarogyaSathi</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#003567",
+          "surface-bright": "#f9f9ff",
+          "surface-container-high": "#dee8ff",
+          "on-primary-fixed": "#002111",
+          "error-container": "#ffdad6",
+          "surface-variant": "#d8e3fb",
+          "outline-variant": "#becabf",
+          "on-tertiary": "#ffffff",
+          "on-error-container": "#93000a",
+          "tertiary": "#b5004c",
+          "outline": "#6e7a71",
+          "inverse-primary": "#7adaa3",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed": "#3f0016",
+          "on-primary-container": "#ebffef",
+          "surface-container-highest": "#d8e3fb",
+          "primary-fixed": "#96f6bd",
+          "inverse-on-surface": "#ecf1ff",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#3e4941",
+          "surface-dim": "#cfdaf2",
+          "tertiary-container": "#dc1f63",
+          "tertiary-fixed-dim": "#ffb2bf",
+          "on-background": "#111c2d",
+          "surface-container-low": "#f0f3ff",
+          "on-tertiary-fixed-variant": "#90003b",
+          "primary-fixed-dim": "#7adaa3",
+          "surface-tint": "#006d42",
+          "surface-container-lowest": "#ffffff",
+          "on-error": "#ffffff",
+          "inverse-surface": "#263143",
+          "secondary": "#005faf",
+          "on-primary": "#ffffff",
+          "on-tertiary-container": "#fff8f8",
+          "on-primary-fixed-variant": "#005231",
+          "secondary-fixed-dim": "#a5c8ff",
+          "on-surface": "#111c2d",
+          "primary": "#006840",
+          "on-secondary-fixed": "#001c3a",
+          "on-secondary-fixed-variant": "#004786",
+          "secondary-container": "#54a0fe",
+          "tertiary-fixed": "#ffd9de",
+          "surface": "#f9f9ff",
+          "surface-container": "#e7eeff",
+          "background": "#f9f9ff",
+          "primary-container": "#1b8354",
+          "secondary-fixed": "#d4e3ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.75rem",
+          "space-lg": "1.75rem",
+          "space-xs": "0.375rem",
+          "space-xl": "2.5rem",
+          "gutter": "1rem",
+          "gutter-mobile": "0.75rem",
+          "space-md": "1.25rem",
+          "margin-mobile": "1rem",
+          "margin": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": ["Noto Sans"],
+          "headline-lg": ["Noto Sans"],
+          "headline-xl": ["Noto Sans"],
+          "headline-md": ["Noto Sans"],
+          "audio-banner": ["Noto Sans"],
+          "label-md": ["Noto Sans"],
+          "body-xl": ["Noto Sans"],
+          "label-lg": ["Noto Sans"],
+          "headline-lg-mobile": ["Noto Sans"],
+          "body-md": ["Noto Sans"],
+          "body-lg": ["Noto Sans"]
+        },
+        "fontSize": {
+          "headline-xl-mobile": ["26px", {"lineHeight": "36px", "fontWeight": "700"}],
+          "headline-lg": ["24px", {"lineHeight": "34px", "fontWeight": "700"}],
+          "headline-xl": ["32px", {"lineHeight": "44px", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "30px", "fontWeight": "600"}],
+          "audio-banner": ["18px", {"lineHeight": "26px", "fontWeight": "700"}],
+          "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "body-xl": ["19px", {"lineHeight": "30px", "fontWeight": "500"}],
+          "label-lg": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+          "headline-lg-mobile": ["22px", {"lineHeight": "32px", "fontWeight": "700"}],
+          "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "body-lg": ["17px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-lg text-body-lg text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,131,84,0.08)]"><div class="h-24 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="p-1 bg-surface-container-lowest rounded-xl shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)]"><span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span></div><div><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">आरोग्यसाथी</span><span class="hidden lg:inline text-outline-variant">|</span><span class="hidden lg:inline font-headline-md text-headline-md text-secondary font-semibold">AarogyaSathi</span></div><span class="hidden xl:inline-block px-space-xs py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-md text-label-md font-medium">आरोग्याची माहिती, तुमच्या सोप्या भाषेत.</span></div></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-2xl" data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl shadow-[0_2px_6px_rgba(27,131,84,0.2)]"><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="mukhya-pan" href="#">मुख्य पान</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="aarogya-vishay" href="#">आरोग्य विषय</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="sarkari-yojana" href="#">सरकारी योजना</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="ai-aarogyasathi" href="#">AI आरोग्यसाथी</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="aapatkaleen-sampark" href="#">आपत्कालीन संपर्क</a></nav><div class="flex items-center gap-space-sm"><button class="hidden sm:flex items-center gap-1.5 px-space-sm py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)] hover:bg-surface-container-low transition-all active:translate-y-0.5" type="button"><span class="material-symbols-outlined text-lg text-primary">volume_up</span><span>मोठ्याने ऐका</span></button><button class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all active:translate-y-0.5" type="button"><span class="font-bold">अ / A+</span></button><button class="flex items-center gap-2 px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-audio-banner text-audio-banner shadow-[0_4px_16px_-2px_rgba(27,131,84,0.3)] hover:bg-primary transition-all active:translate-y-0.5 animate-pulse" type="button"><span class="material-symbols-outlined text-2xl">mic</span><span class="hidden md:inline font-bold">माइक दाबा</span></button><div class="hidden md:flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-lowest rounded-full shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)]"><span class="material-symbols-outlined text-primary text-xl pl-1">language</span><span class="font-label-md text-label-md text-on-surface font-semibold">मराठी / ENG</span></div><div class="flex items-center gap-2 pl-space-xs pr-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XeO2axTWgCip4wNJau_4sl0MNDg2S0HJdfNQHTHtippUOoxK8dxrdgdYalVGVSrWoOA3HN3nNCEKcjKzpBdCaDgDMBcCMDcnu0rA0oHFoX4dFDZXq4ob-eXc2CVPgjloSCaMtvCx5i8xCxylrgIRv_qKjd5fSbZSBM5NhESlDPLpeh4WPCp8BlW8kKTXUJL-V8XnRYPFRHEhguSvlPCKFzTiRfukhgyt12BUND4PsaLlscfba_K8QLfA"/><div class="hidden lg:block text-left"><span class="block font-label-md text-label-md font-bold leading-tight">आशा ताई कक्ष</span><span class="block text-xs opacity-75 leading-tight">मदत सहाय्यक</span></div></div></div></div></header><main class="w-full pt-24 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin space-y-space-lg md:space-y-space-xl py-space-md">
+<!-- Top Section: Accessibility & Display Controls -->
+<section class="bg-surface-container-lowest rounded-3xl p-space-md md:p-space-lg shadow-[0_4px_20px_-4px_rgba(27,131,84,0.08)]">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-3xl">accessibility_new</span>
+</div>
+<div>
+<span class="inline-block px-space-xs py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-md text-label-md">सुलभ वापर सहाय्य केंद्र</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">तुमच्या सोयीनुसार स्क्रीन बदला</h1>
+</div>
+</div>
+<button class="self-start md:self-auto flex items-center gap-1.5 px-space-sm py-2 rounded-xl text-primary font-label-lg text-label-lg hover:bg-surface-container-low transition-colors" id="reset-settings-btn" type="button">
+<span class="material-symbols-outlined text-xl">restart_alt</span>
+<span>सर्व पूर्ववत करा (Reset Defaults)</span>
+</button>
+</div>
+<!-- Quick Toggle Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-xs">
+<!-- Text Size Control -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">format_size</span>
+<span class="font-headline-md text-headline-md text-on-surface">फॉन्ट आकार</span>
+</div>
+<div class="inline-flex p-1 rounded-xl bg-surface-container-high w-full gap-1">
+<button class="font-size-btn flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-primary shadow-sm text-center" data-font="normal" type="button">सामान्य</button>
+<button class="font-size-btn flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center" data-font="large" type="button">मोठा (A+)</button>
+<button class="font-size-btn flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center" data-font="xl" type="button">खूप मोठा (A++)</button>
+</div>
+</div>
+<!-- Color Contrast -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">contrast</span>
+<span class="font-headline-md text-headline-md text-on-surface">रंग कॉन्ट्रास्ट</span>
+</div>
+<div class="inline-flex p-1 rounded-xl bg-surface-container-high w-full gap-1">
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-primary shadow-sm text-center" id="contrast-normal" type="button">सामान्य</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center flex items-center justify-center gap-1" id="contrast-high" type="button">
+<span class="w-3 h-3 rounded-full bg-amber-400"></span>
+<span>उच्च (High)</span>
+</button>
+</div>
+</div>
+<!-- Auto Read Aloud -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">volume_up</span>
+<span class="font-headline-md text-headline-md text-on-surface">आपोआप मोठ्याने ऐका</span>
+</div>
+<div class="inline-flex p-1 rounded-xl bg-surface-container-high w-full gap-1">
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-primary-container text-on-primary shadow-sm text-center" id="audio-toggle-on" type="button">चालू (ON)</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center" id="audio-toggle-off" type="button">बंद (OFF)</button>
+</div>
+</div>
+<!-- Language Selector -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">translate</span>
+<span class="font-headline-md text-headline-md text-on-surface">माहितीची भाषा</span>
+</div>
+<div class="inline-flex p-1 rounded-xl bg-surface-container-high w-full gap-1">
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-primary shadow-sm text-center" type="button">मराठी</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center" type="button">हिंदी</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center" type="button">ENG</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Gamified Health Quiz Section -->
+<section class="relative bg-surface-container-lowest rounded-3xl p-space-md md:p-space-xl shadow-[0_8px_30px_rgba(27,131,84,0.1)] overflow-hidden">
+<!-- Decorative Backdrop Ambience -->
+<div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<!-- Header with Score & Progress -->
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div>
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md mb-space-xs">
+<span class="material-symbols-outlined text-lg">military_tech</span>
+<span>जिंका आणि शिका!</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">आरोग्य साथी प्रश्नमंजुषा</h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant pt-1">सोप्या ३ प्रश्नांची उत्तरे द्या आणि आरोग्य प्रमाणपत्र मिळवा!</p>
+</div>
+<!-- Quiz Progress Card -->
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-2xl flex flex-col gap-2 min-w-[240px]">
+<div class="flex items-center justify-between font-label-lg text-label-lg">
+<span class="text-on-surface font-bold">प्रश्न २ / ३</span>
+<span class="text-primary font-bold">६६% पूर्ण</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" style="width: 66%;"></div>
+</div>
+</div>
+</div>
+<!-- Question Box -->
+<div class="relative z-10 bg-surface-container-low rounded-3xl p-space-md md:p-space-lg space-y-space-md shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<span class="font-headline-md text-headline-md text-secondary font-bold tracking-wide">प्रश्न क्र. ०२</span>
+<!-- Audio Play Button for Question -->
+<button class="inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-audio-banner text-audio-banner shadow-[0_2px_8px_rgba(27,131,84,0.25)] hover:bg-primary transition-transform active:scale-95" id="voice-question-btn" type="button">
+<span class="material-symbols-outlined text-2xl">volume_up</span>
+<span>हा प्रश्न ऐका (Listen)</span>
+</button>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface font-bold leading-snug">
+          प्रश्न: ६ महिन्यांपर्यंत बाळाला आईच्या दुधाव्यतिरिक्त वरचे पाणी किंवा मध पाजावे का?
+        </p>
+<!-- Big touch-friendly options (min-h-56px enforcement) -->
+<div class="space-y-space-sm pt-space-xs" id="quiz-options-container">
+<!-- Option A -->
+<button class="quiz-option-btn group w-full min-h-[64px] text-left p-space-md rounded-2xl bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-high active:translate-y-0.5 flex items-center justify-between gap-space-sm" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-headline-md text-headline-md text-on-surface-variant font-bold flex-shrink-0">अ</span>
+<span class="font-body-xl text-body-xl">होय, बाळाला तहान लागते म्हणून पाणी द्यावे.</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-2xl flex-shrink-0">radio_button_unchecked</span>
+</button>
+<!-- Option B: Marked Selected & Correct -->
+<button class="quiz-option-btn group w-full min-h-[64px] text-left p-space-md rounded-2xl bg-primary-container text-on-primary shadow-[0_4px_16px_rgba(27,131,84,0.25)] transition-all scale-[1.01] flex items-center justify-between gap-space-sm" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-10 h-10 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center font-headline-md text-headline-md font-bold flex-shrink-0">ब</span>
+<span class="font-body-xl text-body-xl font-bold">नाही! ६ महिने फक्त आणि फक्त आईचे दूध द्यावे (पाणीही नको).</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl font-bold" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</button>
+<!-- Option C -->
+<button class="quiz-option-btn group w-full min-h-[64px] text-left p-space-md rounded-2xl bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-high active:translate-y-0.5 flex items-center justify-between gap-space-sm" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-headline-md text-headline-md text-on-surface-variant font-bold flex-shrink-0">क</span>
+<span class="font-body-xl text-body-xl">फक्त मध आणि पाणी देऊ शकतो.</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-2xl flex-shrink-0">radio_button_unchecked</span>
+</button>
+</div>
+<!-- Instant Feedback Box -->
+<div class="mt-space-md rounded-2xl bg-primary-fixed/40 p-space-md flex flex-col sm:flex-row items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-3xl">celebration</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-md text-headline-md text-on-primary-fixed font-bold">🎉 अगदी बरोबर उत्तर!</span>
+<span class="px-space-xs py-0.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md">+१० गुण मिळाले</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+              पहिले ६ महिने आईच्या दुधातच बाळासाठी लागणारे सर्व पाणी आणि पोषण असते. वरचे पाणी दिल्यास संसर्ग व जुलाब होण्याचा मोठा धोका असतो.
+            </p>
+<div class="pt-2 flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>मार्गदर्शन: राष्ट्रीय बाल आरोग्य कार्यक्रम (RBSK)</span>
+</div>
+</div>
+</div>
+<!-- Action Next Button Row -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<button class="w-full sm:w-auto px-space-md py-3 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined">arrow_back</span>
+<span>मागील प्रश्न</span>
+</button>
+<button class="w-full sm:w-auto min-h-[56px] px-space-xl py-3.5 rounded-full bg-primary text-on-primary font-headline-md text-headline-md shadow-[0_4px_16px_rgba(0,104,64,0.35)] hover:bg-primary-container transition-all active:scale-95 flex items-center justify-center gap-2" type="button">
+<span>पुढील प्रश्न (३/३)</span>
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Visual Richness Breakout: Gamification Stats & Visualizer -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- User Badge Status -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block">तुमची सध्याची पातळी</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold block">आरोग्य दूत (सिल्व्हर)</span>
+<span class="font-body-md text-body-md text-primary font-medium">पुढील स्तरासाठी १ अचूक उत्तर हवे</span>
+</div>
+</div>
+<!-- SVG Progress Donut -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block">एकूण अचूकता</span>
+<span class="font-headline-xl text-headline-xl text-primary font-bold">८५%</span>
+<span class="font-body-md text-body-md text-on-surface-variant block">उत्तम आरोग्य ज्ञान!</span>
+</div>
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="85, 100" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<span class="absolute font-label-md text-label-md font-bold text-primary">१७/२०</span>
+</div>
+</div>
+<!-- Instant Certificate Teaser -->
+<div class="bg-gradient-to-br from-surface-container-low to-surface-variant/40 p-space-md rounded-2xl shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-tertiary font-bold block">प्रमाणपत्र अनलॉक</span>
+<span class="font-body-lg text-body-lg text-on-surface font-semibold block">३ पैकी ३ पूर्ण होताच डाउनलोड करा</span>
+<span class="font-label-md text-label-md text-outline">शासकीय डिजिटल बॅज</span>
+</div>
+</div>
+</div>
+<!-- Category Selection for More Quizzes -->
+<section class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2 text-secondary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+<span>इतर विषयांवर क्विझ खेळा</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">कुटुंबाच्या उत्तम आरोग्यासाठी नवीन विषय निवडा</h3>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">प्रत्येक संचात ५ महत्त्वाची माहितीपूर्ण प्रश्न</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Vaccination -->
+<div class="group relative bg-surface-container-lowest rounded-3xl p-space-md shadow-sm transition-all hover:shadow-[0_8px_20px_-4px_rgba(0,95,175,0.15)] hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<div class="h-2 w-full absolute top-0 left-0 bg-secondary"></div>
+<div>
+<div class="w-full h-36 rounded-2xl overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A warm illustration of an Indian rural mother holding her healthy baby at a local village health clinic, assisted by a smiling Anganwadi worker in a saree with a vaccine chart in the background in soft green and earth tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa1ziOZIDwQELwCQTOje_CrqJ4_xE9uFCT5xQSsmMwT63dOtEPNsY5rSJ20YA_ZPfJ6RySfRwRr9j__WwjcL_PnDb-2wB7vcPvXqIcfx_ybU95nr9hRdryw7qUtMsMmMS01PijgQHH9v2XAuqzvyhrqWs7JAREmaFMNErHeFT-LZnxqvpxCghJyADXEytXgRJyls7bYmZm4hEz29mCDYtfyn3mwlydyzdHGigC9-dp0lRxZRj-nj4"/>
+<span class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 text-secondary font-label-md text-label-md font-bold">५ प्रश्न</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight group-hover:text-secondary transition-colors">
+              १. नवजात बालकांचे लसीकरण क्विझ
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant pt-1.5">
+              बीसीजी, पोलिओ आणि पेंटाव्हॅलेंट लस वेळेवर देण्याचे महत्व जाणून घ्या.
+            </p>
+</div>
+<div class="pt-space-md">
+<button class="w-full min-h-[48px] rounded-xl bg-surface-container-low group-hover:bg-secondary group-hover:text-on-secondary text-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 transition-all" type="button">
+<span>खेळायला सुरू करा</span>
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Menstrual Hygiene -->
+<div class="group relative bg-surface-container-lowest rounded-3xl p-space-md shadow-sm transition-all hover:shadow-[0_8px_20px_-4px_rgba(181,0,76,0.15)] hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<div class="h-2 w-full absolute top-0 left-0 bg-tertiary"></div>
+<div>
+<div class="w-full h-36 rounded-2xl overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Compassionate illustration of young Indian rural women and an ASHA worker talking together comfortably about hygiene and wellness in a sunny courtyard with potted plants and warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHuLGiytjJ2-Li8x18_L6Ak3urfvIRjKyiXidf_D2_V2PEMFdhKxn7SYFuCWFRg79xiHGLx1Ylp1jwMxdpVD4Hg8efYGvLR6wCgMSciwp_efRWRyb8Qmvdl-muhPtTmALxM91rCHAP7FG8pKwzZ_1HXzE5UAYsGwz3yRZy_6llEpvPIHdr8LWmyeCFlC5Z9INXPDbMTX3kEehqoqi-gJYLFCw9Gd-sF9fgV9GJmr4DF_srn-Otq98"/>
+<span class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 text-tertiary font-label-md text-label-md font-bold">५ प्रश्न</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight group-hover:text-tertiary transition-colors">
+              २. मासिक पाळी स्वच्छता समज-गैरसमज
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant pt-1.5">
+              योग्य काळजी, सॅनिटरी नॅपकिन विल्हेवाट आणि आहार याविषयी शास्त्रीय सत्य.
+            </p>
+</div>
+<div class="pt-space-md">
+<button class="w-full min-h-[48px] rounded-xl bg-surface-container-low group-hover:bg-tertiary group-hover:text-on-tertiary text-tertiary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 transition-all" type="button">
+<span>खेळायला सुरू करा</span>
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Government Schemes -->
+<div class="group relative bg-surface-container-lowest rounded-3xl p-space-md shadow-sm transition-all hover:shadow-[0_8px_20px_-4px_rgba(27,131,84,0.15)] hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<div class="h-2 w-full absolute top-0 left-0 bg-primary"></div>
+<div>
+<div class="w-full h-36 rounded-2xl overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="An Indian farmer family happily showing their Ayushman Arogya card outside a Primary Health Centre with clean green surroundings and warm community hospital setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSk5iFE6TFVYKSvRCzDPI9qd5c-vKt9ggJoyKlIxFTFAUIVlp7L_f9cc48sbXvOeCOU-wDJQiIxBLXBIYOjWbcqChJd3oppziaVmVbRlL2cIiKpEPwJbCYbI3-Kc_kE-AI1mQo7Z8MpRsoqIorTHkcsJMP-7Awr3TAA9PcuzpZoxpvW3A9dXFq5PQKdTYpeTWJaDKGXuezBpoc-I4c897R2iHV3Zdt-7Dt5Jzcyc5FAcVTwQtGEXA"/>
+<span class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 text-primary font-label-md text-label-md font-bold">५ प्रश्न</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+              ३. सरकारी योजना ओळख क्विझ
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant pt-1.5">
+              महात्मा फुले जन आरोग्य योजना व आयुष्यमान भारत मोफत उपचारांचे निकष.
+            </p>
+</div>
+<div class="pt-space-md">
+<button class="w-full min-h-[48px] rounded-xl bg-surface-container-low group-hover:bg-primary group-hover:text-on-primary text-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 transition-all" type="button">
+<span>खेळायला सुरू करा</span>
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Healthy Nutrition -->
+<div class="group relative bg-surface-container-lowest rounded-3xl p-space-md shadow-sm transition-all hover:shadow-[0_8px_20px_-4px_rgba(234,138,0,0.15)] hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<div class="h-2 w-full absolute top-0 left-0 bg-amber-600"></div>
+<div>
+<div class="w-full h-36 rounded-2xl overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Fresh local Indian traditional healthy food arrangement showing jowar roti, green leafy vegetables, sprouts, drumsticks, and jaggery on a clean rustic thali plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoofJflOV9V_Kl-6ZObzJA_2TUhvxs_vy9iRx5NnNMmFG93z4C9twQk0uGIlCuIa4JWImrZrSJYkOOnl_k96MkWit5soalKWAGFXTQVM3ojQoF3qMubM9zcxO2RVLRJU4eFHXC5LQ8JqwM0FbJ9bQjKh0txAeFZwzpG_afzXR9w1AZH0taRb-mva4ifoGuLxsH3eyTSfgb30bwDs5Bm5LXDlY_5SRqXOClF9g-Osu2lQHBqqUUQjc"/>
+<span class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 text-amber-700 font-label-md text-label-md font-bold">५ प्रश्न</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight group-hover:text-amber-700 transition-colors">
+              ४. निरोगी आहार व पोषण क्विझ
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant pt-1.5">
+              रक्तवाढीसाठी घरगुती पौष्टिक पदार्थ, हिरव्या पालेभाज्या आणि गूळ-शेंगदाणे.
+            </p>
+</div>
+<div class="pt-space-md">
+<button class="w-full min-h-[48px] rounded-xl bg-surface-container-low group-hover:bg-amber-600 group-hover:text-white text-amber-700 font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 transition-all" type="button">
+<span>खेळायला सुरू करा</span>
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Support & ASHA Helpline Banner -->
+<section class="bg-surface-container-low rounded-3xl p-space-md md:p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold">कोणतीही आरोग्य शंका असल्यास घाबरू नका!</h4>
+<p class="font-body-lg text-body-lg text-on-surface-variant">काही शंका असल्यास लगेच १०४ वर मोफत बोला किंवा आशा ताईंशी थेट संपर्क साधा.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm w-full lg:w-auto">
+<a class="flex-1 sm:flex-none min-h-[56px] px-space-lg py-3 rounded-full bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(27,131,84,0.3)] hover:bg-primary transition-all active:scale-95" href="tel:104">
+<span class="material-symbols-outlined text-2xl">call</span>
+<span>१०४ मोफत सल्ला</span>
+</a>
+<button class="flex-1 sm:flex-none min-h-[56px] px-space-lg py-3 rounded-full bg-surface-container-lowest text-secondary font-headline-md text-headline-md flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container-high transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span>आशा ताईंशी गप्पा</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for font sizing, contrast toggles, and audio prompt simulated playback
+  document.addEventListener('DOMContentLoaded', () => {
+    const fontSizeButtons = document.querySelectorAll('.font-size-btn');
+    const contrastNormal = document.getElementById('contrast-normal');
+    const contrastHigh = document.getElementById('contrast-high');
+    const audioOn = document.getElementById('audio-toggle-on');
+    const audioOff = document.getElementById('audio-toggle-off');
+    const voiceQuestionBtn = document.getElementById('voice-question-btn');
+    const resetBtn = document.getElementById('reset-settings-btn');
+
+    // Font size switcher visual feedback
+    fontSizeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        fontSizeButtons.forEach(b => {
+          b.className = 'font-size-btn flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center';
+        });
+        btn.className = 'font-size-btn flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-primary shadow-sm text-center';
+      });
+    });
+
+    // High Contrast toggle
+    contrastHigh.addEventListener('click', () => {
+      contrastHigh.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md font-bold bg-amber-400 text-on-background shadow-sm text-center flex items-center justify-center gap-1';
+      contrastNormal.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center';
+      document.body.classList.add('contrast-125');
+    });
+
+    contrastNormal.addEventListener('click', () => {
+      contrastNormal.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-primary shadow-sm text-center';
+      contrastHigh.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center flex items-center justify-center gap-1';
+      document.body.classList.remove('contrast-125');
+    });
+
+    // Auto audio toggle
+    audioOn.addEventListener('click', () => {
+      audioOn.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-primary-container text-on-primary shadow-sm text-center';
+      audioOff.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center';
+    });
+
+    audioOff.addEventListener('click', () => {
+      audioOff.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface shadow-sm text-center';
+      audioOn.className = 'flex-1 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center';
+    });
+
+    // Voice question simulator
+    let isPlaying = false;
+    voiceQuestionBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        voiceQuestionBtn.classList.remove('bg-primary-container');
+        voiceQuestionBtn.classList.add('bg-tertiary-container', 'animate-pulse');
+        voiceQuestionBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">stop_circle</span><span>आवाज सुरू आहे... (Stop)</span>';
+      } else {
+        voiceQuestionBtn.classList.add('bg-primary-container');
+        voiceQuestionBtn.classList.remove('bg-tertiary-container', 'animate-pulse');
+        voiceQuestionBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">volume_up</span><span>हा प्रश्न ऐका (Listen)</span>';
+      }
+    });
+
+    // Reset Defaults
+    resetBtn.addEventListener('click', () => {
+      contrastNormal.click();
+      fontSizeButtons[0].click();
+      audioOn.click();
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_8px_rgba(27,131,84,0.05)]"><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-lg items-center"><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center"><span class="material-symbols-outlined text-2xl">emergency</span></div><div><span class="block font-headline-md text-headline-md text-error font-bold">१०८ / १०४ रुग्णवाहिका</span><span class="font-body-md text-body-md text-on-surface-variant">मोफत २४ तास शासकीय आपत्कालीन सेवा</span></div></div><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-2xl">record_voice_over</span></div><div><span class="block font-headline-md text-headline-md text-primary font-bold">आवाज मार्गदर्शन उपलब्ध</span><span class="font-body-md text-body-md text-on-surface-variant">कोणत्याही पानावर वरचा हिरवा माइक दाबा</span></div></div><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-2xl">child_care</span></div><div><span class="block font-headline-md text-headline-md text-secondary font-bold">१०९८ बाल मदत केंद्र</span><span class="font-body-md text-body-md text-on-surface-variant">माता आणि बाल आरोग्य सल्लागार</span></div></div></div><div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-2xl">volunteer_activism</span><span class="font-body-lg text-body-lg text-on-surface font-medium">आरोग्य ज्ञानातून सक्षम कुटुंब आणि संपन्न गाव. आपल्या हक्काची सोपी आरोग्य माहिती.</span></div><div class="font-label-md text-label-md text-on-surface-variant text-center md:text-right">© २०२४ आरोग्यसाथी (AarogyaSathi) | सार्वजनिक आरोग्य जागरूकता व्यासपीठ</div></div></div></footer></body></html>

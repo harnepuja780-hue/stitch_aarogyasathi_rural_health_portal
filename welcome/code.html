@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="mr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>आरोग्यसाथी | AarogyaSathi</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#003567",
+          "surface-bright": "#f9f9ff",
+          "surface-container-high": "#dee8ff",
+          "on-primary-fixed": "#002111",
+          "error-container": "#ffdad6",
+          "surface-variant": "#d8e3fb",
+          "outline-variant": "#becabf",
+          "on-tertiary": "#ffffff",
+          "on-error-container": "#93000a",
+          "tertiary": "#b5004c",
+          "outline": "#6e7a71",
+          "inverse-primary": "#7adaa3",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed": "#3f0016",
+          "on-primary-container": "#ebffef",
+          "surface-container-highest": "#d8e3fb",
+          "primary-fixed": "#96f6bd",
+          "inverse-on-surface": "#ecf1ff",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#3e4941",
+          "surface-dim": "#cfdaf2",
+          "tertiary-container": "#dc1f63",
+          "tertiary-fixed-dim": "#ffb2bf",
+          "on-background": "#111c2d",
+          "surface-container-low": "#f0f3ff",
+          "on-tertiary-fixed-variant": "#90003b",
+          "primary-fixed-dim": "#7adaa3",
+          "surface-tint": "#006d42",
+          "surface-container-lowest": "#ffffff",
+          "on-error": "#ffffff",
+          "inverse-surface": "#263143",
+          "secondary": "#005faf",
+          "on-primary": "#ffffff",
+          "on-tertiary-container": "#fff8f8",
+          "on-primary-fixed-variant": "#005231",
+          "secondary-fixed-dim": "#a5c8ff",
+          "on-surface": "#111c2d",
+          "primary": "#006840",
+          "on-secondary-fixed": "#001c3a",
+          "on-secondary-fixed-variant": "#004786",
+          "secondary-container": "#54a0fe",
+          "tertiary-fixed": "#ffd9de",
+          "surface": "#f9f9ff",
+          "surface-container": "#e7eeff",
+          "background": "#f9f9ff",
+          "primary-container": "#1b8354",
+          "secondary-fixed": "#d4e3ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.75rem",
+          "space-lg": "1.75rem",
+          "space-xs": "0.375rem",
+          "space-xl": "2.5rem",
+          "gutter": "1rem",
+          "gutter-mobile": "0.75rem",
+          "space-md": "1.25rem",
+          "margin-mobile": "1rem",
+          "margin": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": ["Noto Sans"],
+          "headline-lg": ["Noto Sans"],
+          "headline-xl": ["Noto Sans"],
+          "headline-md": ["Noto Sans"],
+          "audio-banner": ["Noto Sans"],
+          "label-md": ["Noto Sans"],
+          "body-xl": ["Noto Sans"],
+          "label-lg": ["Noto Sans"],
+          "headline-lg-mobile": ["Noto Sans"],
+          "body-md": ["Noto Sans"],
+          "body-lg": ["Noto Sans"]
+        },
+        "fontSize": {
+          "headline-xl-mobile": ["26px", {"lineHeight": "36px", "fontWeight": "700"}],
+          "headline-lg": ["24px", {"lineHeight": "34px", "fontWeight": "700"}],
+          "headline-xl": ["32px", {"lineHeight": "44px", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "30px", "fontWeight": "600"}],
+          "audio-banner": ["18px", {"lineHeight": "26px", "fontWeight": "700"}],
+          "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "body-xl": ["19px", {"lineHeight": "30px", "fontWeight": "500"}],
+          "label-lg": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+          "headline-lg-mobile": ["22px", {"lineHeight": "32px", "fontWeight": "700"}],
+          "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "body-lg": ["17px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-lg text-body-lg text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,131,84,0.08)]"><div class="h-24 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="p-1 bg-surface-container-lowest rounded-xl shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)]"><span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span></div><div><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">आरोग्यसाथी</span><span class="hidden lg:inline text-outline-variant">|</span><span class="hidden lg:inline font-headline-md text-headline-md text-secondary font-semibold">AarogyaSathi</span></div><span class="hidden xl:inline-block px-space-xs py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-md text-label-md font-medium">आरोग्याची माहिती, तुमच्या सोप्या भाषेत.</span></div></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-2xl" data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl shadow-[0_2px_6px_rgba(27,131,84,0.2)]"><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="mukhya-pan" href="#">मुख्य पान</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="aarogya-vishay" href="#">आरोग्य विषय</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="sarkari-yojana" href="#">सरकारी योजना</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="ai-aarogyasathi" href="#">AI आरोग्यसाथी</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="aapatkaleen-sampark" href="#">आपत्कालीन संपर्क</a></nav><div class="flex items-center gap-space-sm"><button class="hidden sm:flex items-center gap-1.5 px-space-sm py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)] hover:bg-surface-container-low transition-all active:translate-y-0.5" type="button"><span class="material-symbols-outlined text-lg text-primary">volume_up</span><span>मोठ्याने ऐका</span></button><button class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all active:translate-y-0.5" type="button"><span class="font-bold">अ / A+</span></button><button class="flex items-center gap-2 px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-audio-banner text-audio-banner shadow-[0_4px_16px_-2px_rgba(27,131,84,0.3)] hover:bg-primary transition-all active:translate-y-0.5 animate-pulse" type="button"><span class="material-symbols-outlined text-2xl">mic</span><span class="hidden md:inline font-bold">माइक दाबा</span></button><div class="hidden md:flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-lowest rounded-full shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)]"><span class="material-symbols-outlined text-primary text-xl pl-1">language</span><span class="font-label-md text-label-md text-on-surface font-semibold">मराठी / ENG</span></div><div class="flex items-center gap-2 pl-space-xs pr-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XeO2axTWgCip4wNJau_4sl0MNDg2S0HJdfNQHTHtippUOoxK8dxrdgdYalVGVSrWoOA3HN3nNCEKcjKzpBdCaDgDMBcCMDcnu0rA0oHFoX4dFDZXq4ob-eXc2CVPgjloSCaMtvCx5i8xCxylrgIRv_qKjd5fSbZSBM5NhESlDPLpeh4WPCp8BlW8kKTXUJL-V8XnRYPFRHEhguSvlPCKFzTiRfukhgyt12BUND4PsaLlscfba_K8QLfA"/><div class="hidden lg:block text-left"><span class="block font-label-md text-label-md font-bold leading-tight">आशा ताई कक्ष</span><span class="block text-xs opacity-75 leading-tight">मदत सहाय्यक</span></div></div></div></div></header><main class="w-full pt-24 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Accessibility & Comfort Control Strip -->
+<div class="w-full bg-surface-container-low py-space-sm px-margin shadow-sm">
+<div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Voice / Listen Assistance Quick Trigger -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-all active:translate-y-0.5" id="readAloudBtn" type="button">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span class="font-bold">मोठ्याने ऐका (Listen)</span>
+</button>
+<span class="hidden sm:inline-block px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-md text-label-md">
+          मराठी आवाज सहाय्य
+        </span>
+</div>
+<!-- Text Size & Contrast Toggles -->
+<div class="flex items-center flex-wrap gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="px-3 py-1 rounded-full text-primary font-label-md text-label-md bg-surface-container-high font-bold transition-all" id="fontNormal" type="button">
+            सामान्य
+          </button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="fontLarge" type="button">
+            मोठे अक्षर A+
+          </button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all" id="contrastToggle" type="button">
+<span class="material-symbols-outlined text-lg">contrast</span>
+<span>रंग कॉन्ट्रास्ट</span>
+</button>
+<div class="flex items-center gap-1.5 pl-3 pr-2 py-1 bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-lg">language</span>
+<select aria-label="भाषा निवडा" class="bg-transparent font-label-md text-label-md text-on-surface font-semibold focus:outline-none cursor-pointer">
+<option selected="">मराठी (Marathi)</option>
+<option>मराठी + English</option>
+<option>हिंदी (Hindi)</option>
+<option>English</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Welcoming Content Container -->
+<div class="w-full max-w-6xl mx-auto px-margin py-space-md sm:py-space-lg flex flex-col gap-space-lg">
+<!-- Top Warm Banner & Logo Placement -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-lowest p-space-md sm:p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<img alt="आरोग्यसाथी - AarogyaSathi Logo" class="h-16 w-auto object-contain rounded-md" src="https://lh3.googleusercontent.com/aida/AEtjO1X67sjTEMMppA4-FjK6nNYKLNJXTETiNpUA_rO5ii4QMyB9E91q-LyFpP72sc1IFdC05zdXRNyIv_mvwdUB9pgVCvvu91NpZ9cFYutAmXBw-msWgYqJtU68MutdxyY1fWHgMYhDEwSg4_1jzuIQ1GkaUn3DgOmjQ811ob94cj9ye7pyZdS2b88SbZNx-izocgd39r-JiNG2_3U5PKGjffuX-UX8mrDUg8-mJM3p8DfpDpZNPiO-jDJDlA"/>
+<div class="hidden sm:block">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>विश्वसनीय आरोग्य मित्र</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface font-bold mt-1">आरोग्याची माहिती, तुमच्या सोप्या भाषेत.</p>
+</div>
+</div>
+<!-- Quick helpline trigger pill -->
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-error-container text-on-error-container font-label-lg text-label-lg shadow-sm hover:opacity-90 transition-all active:translate-y-0.5" href="tel:108">
+<span class="material-symbols-outlined text-error text-2xl animate-bounce">call</span>
+<span class="font-bold">आपत्कालीन: १०८ / १०४</span>
+</a>
+</div>
+<!-- Heartwarming Central Hero: Rural Family Harmony with Audio Guidance -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+<!-- Family Illustration Visual -->
+<div class="lg:col-span-7 relative h-72 sm:h-96 lg:h-[420px] w-full overflow-hidden bg-surface-container-low">
+<img alt="सुखी ग्रामीण कुटुंब - आजी, आई-वडील आणि हसणारे बाळ घराबाहेर" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHUt493ZWoPnqQYva5prGjyieINkr2N_STXmA6jl8QnNl6LuiDK2BBqsklrsmai0mp_ReexM1tqRMRXQIZ8covNTbEZfvj6xzoKPTf1VJ5tM4b1VgU8lSU5gwDF0rpGDqSlFNHaoweRn8-daHvcaTkdsmEeGFfzrGLLlodzkLHSRYzmO51GtUdqj4RMnE6ayvvnWsOz0XGDg7DLVTp5xEyKnmEqtVm7YrqErqUoLNQMLgrXjnXT0g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent lg:hidden"></div>
+</div>
+<!-- Empathetic Narrative Column -->
+<div class="lg:col-span-5 p-space-md sm:p-space-xl flex flex-col justify-center gap-space-md">
+<div class="inline-flex items-center gap-2 self-start px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-lg">family_restroom</span>
+<span>कुटुंबाचे निरोगी भविष्य</span>
+</div>
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+              तुम्हाला कसे वापरायचे आहे?
+            </h1>
+<p class="font-body-xl text-body-xl text-on-surface font-medium leading-relaxed">
+              आरोग्य तपासणी, बाल पोषण, माता काळजी व शासकीय योजना आता सोप्या शब्दात.
+            </p>
+</div>
+<!-- Free-Access reassurance banner -->
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md font-semibold">
+              तुम्ही कोणतीही नोंदणी (Login) न करता देखील सर्व आरोग्य माहिती मोफत पाहू शकता!
+            </span>
+</div>
+<!-- Low-literacy Voice Prompt Action Bar -->
+<button class="group flex items-center justify-between gap-space-sm p- space-sm px-4 py-3 rounded-2xl bg-primary text-on-primary shadow-md hover:bg-primary-container transition-all active:translate-y-0.5" id="heroVoiceTrigger" type="button">
+<div class="flex items-center gap-3 text-left">
+<div class="w-12 h-12 rounded-full bg-on-primary text-primary flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl animate-pulse">mic</span>
+</div>
+<div>
+<span class="block font-audio-banner text-audio-banner font-bold">वाचता येत नसेल तर बोला</span>
+<span class="block font-label-md text-label-md text-on-primary-container opacity-90">हिरवा माइक दाबा व विचारून माहिती ऐका</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-3xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Section: Three Large Accessible Entry Paths -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<div class="w-3 h-8 rounded-full bg-primary-container"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+            खालील ३ सोप्या पर्यायांपैकी एक निवडा
+          </h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">कोणताही पर्याय निवडून लगेच माहिती मिळवा</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-stretch">
+<!-- CARD 1: Guest Start (Fastest & Easiest) -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-200 relative group overflow-hidden">
+<div class="h-2 w-full bg-primary-container absolute top-0 left-0"></div>
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-start justify-between gap-2">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed/50 text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">person_pin</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+                १ सेकंदात सुरू • सोपे
+              </span>
+</div>
+<div class="flex flex-col gap-1 mt-2">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+                Guest म्हणून सुरू करा
+              </h3>
+<span class="font-label-md text-label-md text-primary font-semibold">Start without Login</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+              कोणतीही नोंदणी किंवा पासवर्ड नको. थेट मुख्य पानावर जा आणि आजार, पोषण, घरगुती उपाय व शासकीय योजनांची माहिती तत्काळ मिळवा.
+            </p>
+<ul class="flex flex-col gap-2 my-2 py-2 border-t-0">
+<li class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>सर्व आजारांची साधी माहिती</span>
+</li>
+<li class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-lg">check</span>
+<span>मोफत सरकारी योजनांची यादी</span>
+</li>
+</ul>
+</div>
+<a class="mt-space-md w-full min-h-[56px] flex items-center justify-center gap-2 px-space-md py-3.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary transition-all active:translate-y-0.5 text-center" data-path="mukhya-pan" href="#">
+<span>थेट पुढे जा (Go to Home)</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+<!-- CARD 2: Login with Mobile (Save Records) -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-200 relative group overflow-hidden">
+<div class="h-2 w-full bg-secondary absolute top-0 left-0"></div>
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-start justify-between gap-2">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">phone_android</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold">
+                नोंदी जपण्यासाठी
+              </span>
+</div>
+<div class="flex flex-col gap-1 mt-2">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+                मोबाइल नंबरने Login करा
+              </h3>
+<span class="font-label-md text-label-md text-secondary font-semibold">Login with Mobile</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+              तुमचा १० अंकी फोन नंबर टाकून सोप्या SMS किंवा कॉलवरील OTP ने सुरक्षित प्रवेश करा. मुलांचे लसीकरण व डॉक्टरांच्या चिठ्ठ्या जपून ठेवा.
+            </p>
+<ul class="flex flex-col gap-2 my-2 py-2">
+<li class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-lg">check</span>
+<span>लस आठवण व डॉक्टरांचे सल्ले</span>
+</li>
+<li class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-lg">check</span>
+<span>कुटुंबाचे आरोग्य कार्ड तयार करा</span>
+</li>
+</ul>
+</div>
+<button class="mt-space-md w-full min-h-[56px] flex items-center justify-center gap-2 px-space-md py-3.5 rounded-xl bg-surface-container-high text-on-secondary-container font-label-lg text-label-lg font-bold shadow-sm hover:bg-secondary-fixed transition-all active:translate-y-0.5 text-center" id="openMobileModal" type="button">
+<span class="material-symbols-outlined text-xl">dialpad</span>
+<span>फोन नंबरने सुरू करा →</span>
+</button>
+</div>
+<!-- CARD 3: Voice Assistance (Pure Audio & Low Literacy) -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-200 relative group overflow-hidden">
+<div class="h-2 w-full bg-tertiary-container absolute top-0 left-0"></div>
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-start justify-between gap-2">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold">
+                बोलून वापरा • मोफत
+              </span>
+</div>
+<div class="flex flex-col gap-1 mt-2">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+                व्हॉइस असिस्टंट (बोलून शोधा)
+              </h3>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Voice Assistance</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+              टाईप करण्याची किंवा वाचण्याची अजिबात गरज नाही! फक्त माईक दाबा आणि तुमच्या गावच्या भाषेत प्रश्न विचारा, मराठीत लगेच उत्तर ऐका.
+            </p>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2 my-2">
+<div class="flex gap-1 items-end h-5">
+<span class="w-1 bg-tertiary h-2 animate-pulse"></span>
+<span class="w-1 bg-tertiary h-5 animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-1 bg-tertiary h-3 animate-pulse" style="animation-delay: 300ms;"></span>
+<span class="w-1 bg-tertiary h-4 animate-pulse" style="animation-delay: 450ms;"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">"बाळाला ताप आल्यास काय करावे?"</span>
+</div>
+</div>
+<button class="mt-space-md w-full min-h-[56px] flex items-center justify-center gap-2 px-space-md py-3.5 rounded-xl bg-tertiary text-on-tertiary font-label-lg text-label-lg font-bold shadow-md hover:bg-tertiary-container transition-all active:translate-y-0.5 text-center" id="voiceCardAction" type="button">
+<span class="material-symbols-outlined text-2xl animate-pulse">mic</span>
+<span>माइक सुरू करा (Start Voice)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Audio Instructions & Community Trust Showcase -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Asha Tai / Anganwadi Guided Help -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-primary-fixed/60 text-primary flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">आशा ताई व अंगणवाडी मदत</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">गावासाठी</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            तुमच्या गावातील प्राथमिक आरोग्य केंद्र (PHC) आणि आशा कार्यकर्तीचे मार्गदर्शन एका क्लिकवर मिळवा.
+          </p>
+</div>
+</div>
+<!-- Trust, Privacy & No Fees Guarantee -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/60 text-secondary flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">शासकीय मानके प्रमाणित</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">१००% मोफत</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            सर्व माहिती आरोग्य व कुटुंब कल्याण मंत्रालय आणि जागतिक आरोग्य संघटना (WHO) मार्गदर्शक तत्त्वांनुसार सत्यापित.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Voice Modal / Drawer Overlay -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-4" id="voiceModal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-3xl p-space-lg shadow-2xl flex flex-col items-center text-center gap-space-md animate-in fade-in duration-200">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-lg text-label-lg text-primary font-bold">मराठी व्हॉइस मदत कक्ष</span>
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-variant" id="closeVoiceModal" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="relative my-4 flex items-center justify-center">
+<div class="absolute w-28 h-28 rounded-full bg-primary-fixed-dim/40 animate-ping"></div>
+<div class="w-24 h-24 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg relative z-10">
+<span class="material-symbols-outlined text-5xl">mic</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="font-headline-lg text-headline-lg text-on-surface font-bold">आता बोला, आम्ही ऐकत आहोत...</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">उदा. "माझ्या डोक्यात दुखत आहे", "लहान बाळाची लस कधी द्यायची?"</p>
+</div>
+<div class="w-full p-space-sm rounded-xl bg-surface-container-low flex items-center justify-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-bounce"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-bounce" style="animation-delay: 200ms;"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-bounce" style="animation-delay: 400ms;"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold ml-2">ध्वनी तरंग सक्रिय आहेत</span>
+</div>
+<button class="w-full py-3 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg font-bold hover:bg-surface-variant" id="cancelVoiceBtn" type="button">
+        थांबवा (Cancel)
+      </button>
+</div>
+</div>
+<!-- Interactive Mobile Login Modal -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-4" id="mobileLoginModal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-3xl p-space-lg shadow-2xl flex flex-col gap-space-md animate-in fade-in duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-2xl">lock_open</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">सुरक्षित प्रवेश (Login)</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-variant" id="closeMobileModal" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        तुमचा १० अंकी मोबाइल क्रमांक प्रविष्ट करा. आम्ही ४ अंकी OTP पाठवू.
+      </p>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="phoneInput">मोबाइल क्रमांक / Mobile Number</label>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="font-label-lg text-label-lg font-bold text-on-surface px-2">+91</span>
+<input class="w-full bg-transparent font-headline-md text-headline-md text-on-surface focus:outline-none placeholder:text-outline-variant" id="phoneInput" maxlength="10" placeholder="98XXXXXXXX" type="tel"/>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm" type="button">
+<span class="material-symbols-outlined text-xl">mic</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<input checked="" class="w-5 h-5 accent-primary rounded cursor-pointer" id="whatsappOpt" type="checkbox"/>
+<label class="font-label-md text-label-md text-on-surface cursor-pointer" for="whatsappOpt">
+          WhatsApp वर देखील माहिती व OTP मिळवा
+        </label>
+</div>
+<button class="w-full min-h-[56px] rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold shadow-md hover:bg-on-secondary-container transition-all flex items-center justify-center gap-2 active:translate-y-0.5" type="button">
+<span>OTP पाठवा (Send OTP)</span>
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+<p class="text-center font-label-md text-label-md text-on-surface-variant">
+        किंवा <a class="text-primary font-bold underline" data-path="mukhya-pan" href="#">नोंदणी न करता Guest म्हणून पुढे जा</a>
+</p>
+</div>
+</div>
+<!-- Inline Script for Visual & Interactive Feedback -->
+<script>
+    (function () {
+      // Voice Modal Handlers
+      const voiceModal = document.getElementById('voiceModal');
+      const openVoiceTriggers = [
+        document.getElementById('voiceCardAction'),
+        document.getElementById('heroVoiceTrigger')
+      ];
+      const closeVoiceTriggers = [
+        document.getElementById('closeVoiceModal'),
+        document.getElementById('cancelVoiceBtn')
+      ];
+
+      openVoiceTriggers.forEach(el => {
+        if (el) {
+          el.addEventListener('click', () => {
+            voiceModal.classList.remove('hidden');
+          });
+        }
+      });
+
+      closeVoiceTriggers.forEach(el => {
+        if (el) {
+          el.addEventListener('click', () => {
+            voiceModal.classList.add('hidden');
+          });
+        }
+      });
+
+      // Mobile Modal Handlers
+      const mobileModal = document.getElementById('mobileLoginModal');
+      const openMobileBtn = document.getElementById('openMobileModal');
+      const closeMobileBtn = document.getElementById('closeMobileModal');
+
+      if (openMobileBtn) {
+        openMobileBtn.addEventListener('click', () => {
+          mobileModal.classList.remove('hidden');
+        });
+      }
+      if (closeMobileBtn) {
+        closeMobileBtn.addEventListener('click', () => {
+          mobileModal.classList.add('hidden');
+        });
+      }
+
+      // Read aloud voice prompt simulated feedback
+      const readAloudBtn = document.getElementById('readAloudBtn');
+      let isPlaying = false;
+      if (readAloudBtn) {
+        readAloudBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            readAloudBtn.classList.add('bg-primary', 'text-on-primary');
+            readAloudBtn.classList.remove('bg-surface-container-lowest', 'text-primary');
+            readAloudBtn.innerHTML = '<span class="material-symbols-outlined text-xl animate-spin">sync</span><span class="font-bold">वाचत आहे... (Stop)</span>';
+          } else {
+            readAloudBtn.classList.remove('bg-primary', 'text-on-primary');
+            readAloudBtn.classList.add('bg-surface-container-lowest', 'text-primary');
+            readAloudBtn.innerHTML = '<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: \'FILL\' 1;">volume_up</span><span class="font-bold">मोठ्याने ऐका (Listen)</span>';
+          }
+        });
+      }
+
+      // Font switchers
+      const fontNormal = document.getElementById('fontNormal');
+      const fontLarge = document.getElementById('fontLarge');
+      if (fontNormal && fontLarge) {
+        fontLarge.addEventListener('click', () => {
+          document.documentElement.style.fontSize = '18px';
+          fontLarge.classList.add('bg-surface-container-high', 'font-bold');
+          fontNormal.classList.remove('bg-surface-container-high', 'font-bold');
+        });
+        fontNormal.addEventListener('click', () => {
+          document.documentElement.style.fontSize = '16px';
+          fontNormal.classList.add('bg-surface-container-high', 'font-bold');
+          fontLarge.classList.remove('bg-surface-container-high', 'font-bold');
+        });
+      }
+
+      // High contrast toggle
+      const contrastToggle = document.getElementById('contrastToggle');
+      if (contrastToggle) {
+        let isContrast = false;
+        contrastToggle.addEventListener('click', () => {
+          isContrast = !isContrast;
+          if (isContrast) {
+            document.body.classList.add('contrast-125', 'brightness-95');
+            contrastToggle.classList.add('bg-on-surface', 'text-surface');
+          } else {
+            document.body.classList.remove('contrast-125', 'brightness-95');
+            contrastToggle.classList.remove('bg-on-surface', 'text-surface');
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_8px_rgba(27,131,84,0.05)]"><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-lg items-center"><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center"><span class="material-symbols-outlined text-2xl">emergency</span></div><div><span class="block font-headline-md text-headline-md text-error font-bold">१०८ / १०४ रुग्णवाहिका</span><span class="font-body-md text-body-md text-on-surface-variant">मोफत २४ तास शासकीय आपत्कालीन सेवा</span></div></div><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-2xl">record_voice_over</span></div><div><span class="block font-headline-md text-headline-md text-primary font-bold">आवाज मार्गदर्शन उपलब्ध</span><span class="font-body-md text-body-md text-on-surface-variant">कोणत्याही पानावर वरचा हिरवा माइक दाबा</span></div></div><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-2xl">child_care</span></div><div><span class="block font-headline-md text-headline-md text-secondary font-bold">१०९८ बाल मदत केंद्र</span><span class="font-body-md text-body-md text-on-surface-variant">माता आणि बाल आरोग्य सल्लागार</span></div></div></div><div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-2xl">volunteer_activism</span><span class="font-body-lg text-body-lg text-on-surface font-medium">आरोग्य ज्ञानातून सक्षम कुटुंब आणि संपन्न गाव. आपल्या हक्काची सोपी आरोग्य माहिती.</span></div><div class="font-label-md text-label-md text-on-surface-variant text-center md:text-right">© २०२४ आरोग्यसाथी (AarogyaSathi) | सार्वजनिक आरोग्य जागरूकता व्यासपीठ</div></div></div></footer></body></html>

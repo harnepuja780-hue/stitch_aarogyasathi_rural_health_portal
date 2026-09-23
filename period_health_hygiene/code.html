@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="mr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>आरोग्यसाथी | AarogyaSathi</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#003567",
+          "surface-bright": "#f9f9ff",
+          "surface-container-high": "#dee8ff",
+          "on-primary-fixed": "#002111",
+          "error-container": "#ffdad6",
+          "surface-variant": "#d8e3fb",
+          "outline-variant": "#becabf",
+          "on-tertiary": "#ffffff",
+          "on-error-container": "#93000a",
+          "tertiary": "#b5004c",
+          "outline": "#6e7a71",
+          "inverse-primary": "#7adaa3",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed": "#3f0016",
+          "on-primary-container": "#ebffef",
+          "surface-container-highest": "#d8e3fb",
+          "primary-fixed": "#96f6bd",
+          "inverse-on-surface": "#ecf1ff",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#3e4941",
+          "surface-dim": "#cfdaf2",
+          "tertiary-container": "#dc1f63",
+          "tertiary-fixed-dim": "#ffb2bf",
+          "on-background": "#111c2d",
+          "surface-container-low": "#f0f3ff",
+          "on-tertiary-fixed-variant": "#90003b",
+          "primary-fixed-dim": "#7adaa3",
+          "surface-tint": "#006d42",
+          "surface-container-lowest": "#ffffff",
+          "on-error": "#ffffff",
+          "inverse-surface": "#263143",
+          "secondary": "#005faf",
+          "on-primary": "#ffffff",
+          "on-tertiary-container": "#fff8f8",
+          "on-primary-fixed-variant": "#005231",
+          "secondary-fixed-dim": "#a5c8ff",
+          "on-surface": "#111c2d",
+          "primary": "#006840",
+          "on-secondary-fixed": "#001c3a",
+          "on-secondary-fixed-variant": "#004786",
+          "secondary-container": "#54a0fe",
+          "tertiary-fixed": "#ffd9de",
+          "surface": "#f9f9ff",
+          "surface-container": "#e7eeff",
+          "background": "#f9f9ff",
+          "primary-container": "#1b8354",
+          "secondary-fixed": "#d4e3ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.75rem",
+          "space-lg": "1.75rem",
+          "space-xs": "0.375rem",
+          "space-xl": "2.5rem",
+          "gutter": "1rem",
+          "gutter-mobile": "0.75rem",
+          "space-md": "1.25rem",
+          "margin-mobile": "1rem",
+          "margin": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": ["Noto Sans"],
+          "headline-lg": ["Noto Sans"],
+          "headline-xl": ["Noto Sans"],
+          "headline-md": ["Noto Sans"],
+          "audio-banner": ["Noto Sans"],
+          "label-md": ["Noto Sans"],
+          "body-xl": ["Noto Sans"],
+          "label-lg": ["Noto Sans"],
+          "headline-lg-mobile": ["Noto Sans"],
+          "body-md": ["Noto Sans"],
+          "body-lg": ["Noto Sans"]
+        },
+        "fontSize": {
+          "headline-xl-mobile": ["26px", {"lineHeight": "36px", "fontWeight": "700"}],
+          "headline-lg": ["24px", {"lineHeight": "34px", "fontWeight": "700"}],
+          "headline-xl": ["32px", {"lineHeight": "44px", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "30px", "fontWeight": "600"}],
+          "audio-banner": ["18px", {"lineHeight": "26px", "fontWeight": "700"}],
+          "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "body-xl": ["19px", {"lineHeight": "30px", "fontWeight": "500"}],
+          "label-lg": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+          "headline-lg-mobile": ["22px", {"lineHeight": "32px", "fontWeight": "700"}],
+          "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "body-lg": ["17px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-lg text-body-lg text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,131,84,0.08)]"><div class="h-24 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="p-1 bg-surface-container-lowest rounded-xl shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)]"><span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span></div><div><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">आरोग्यसाथी</span><span class="hidden lg:inline text-outline-variant">|</span><span class="hidden lg:inline font-headline-md text-headline-md text-secondary font-semibold">AarogyaSathi</span></div><span class="hidden xl:inline-block px-space-xs py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-md text-label-md font-medium">आरोग्याची माहिती, तुमच्या सोप्या भाषेत.</span></div></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-2xl" data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl shadow-[0_2px_6px_rgba(27,131,84,0.2)]"><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="mukhya-pan" href="#">मुख्य पान</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="aarogya-vishay" href="#">आरोग्य विषय</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="sarkari-yojana" href="#">सरकारी योजना</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="ai-aarogyasathi" href="#">AI आरोग्यसाथी</a><a class="px-space-sm py-2 rounded-xl text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="aapatkaleen-sampark" href="#">आपत्कालीन संपर्क</a></nav><div class="flex items-center gap-space-sm"><button class="hidden sm:flex items-center gap-1.5 px-space-sm py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)] hover:bg-surface-container-low transition-all active:translate-y-0.5" type="button"><span class="material-symbols-outlined text-lg text-primary">volume_up</span><span>मोठ्याने ऐका</span></button><button class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all active:translate-y-0.5" type="button"><span class="font-bold">अ / A+</span></button><button class="flex items-center gap-2 px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-audio-banner text-audio-banner shadow-[0_4px_16px_-2px_rgba(27,131,84,0.3)] hover:bg-primary transition-all active:translate-y-0.5 animate-pulse" type="button"><span class="material-symbols-outlined text-2xl">mic</span><span class="hidden md:inline font-bold">माइक दाबा</span></button><div class="hidden md:flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-lowest rounded-full shadow-[0_2px_6px_-1px_rgba(30,41,59,0.06)]"><span class="material-symbols-outlined text-primary text-xl pl-1">language</span><span class="font-label-md text-label-md text-on-surface font-semibold">मराठी / ENG</span></div><div class="flex items-center gap-2 pl-space-xs pr-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XeO2axTWgCip4wNJau_4sl0MNDg2S0HJdfNQHTHtippUOoxK8dxrdgdYalVGVSrWoOA3HN3nNCEKcjKzpBdCaDgDMBcCMDcnu0rA0oHFoX4dFDZXq4ob-eXc2CVPgjloSCaMtvCx5i8xCxylrgIRv_qKjd5fSbZSBM5NhESlDPLpeh4WPCp8BlW8kKTXUJL-V8XnRYPFRHEhguSvlPCKFzTiRfukhgyt12BUND4PsaLlscfba_K8QLfA"/><div class="hidden lg:block text-left"><span class="block font-label-md text-label-md font-bold leading-tight">आशा ताई कक्ष</span><span class="block text-xs opacity-75 leading-tight">मदत सहाय्यक</span></div></div></div></div></header><main class="w-full pt-24 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin space-y-space-lg md:space-y-space-xl pb-16">
+<!-- Top Banner: Warm, Respectful & Audio Guided -->
+<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-tertiary-fixed via-surface-container-low to-tertiary-fixed/30 p-space-md md:p-space-xl shadow-sm">
+<div class="absolute -right-8 -top-8 w-64 h-64 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span>स्त्री आरोग्य व सन्मान कक्ष</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+            मासिक पाळी: एक नैसर्गिक, पवित्र आणि निरोगी प्रक्रिया
+          </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+            लाजू नका, घाबरू नका — पाळीच्या दिवसांत स्वतःची काळजी कशी घ्यावी ते सोप्या भाषेत समजून घ्या.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-xs shrink-0">
+<button class="flex items-center justify-center gap-3 px-space-lg py-4 rounded-2xl bg-tertiary text-on-tertiary font-audio-banner text-audio-banner shadow-md hover:bg-tertiary-container transition-all active:translate-y-0.5" id="masterAudioBtn" onclick="toggleAudio('संपूर्ण पाळी आरोग्य माहिती वाचून दाखवली जात आहे')">
+<span class="material-symbols-outlined text-2xl">volume_up</span>
+<span>ही सर्व माहिती मराठीत ऐका</span>
+</button>
+<span class="text-center font-label-md text-label-md text-on-surface-variant flex items-center justify-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+            आवाज मार्गदर्शक सुरू आहे
+          </span>
+</div>
+</div>
+</div>
+<!-- Cycle Tracker & Audio Assistant Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Interactive Easy Cycle Tracker (Left 7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md md:p-space-lg rounded-3xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">सोपा पाळी ट्रॅकर</h2>
+<span class="font-label-md text-label-md text-on-surface-variant">तुमच्या पुढील पाळीची सोपी आठवण</span>
+</div>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-low text-tertiary font-label-md text-label-md hover:bg-tertiary-fixed transition" onclick="toggleAudio('ट्रॅकर वापरण्यासाठी शेवटच्या पाळीची तारीख निवडा')">
+<span class="material-symbols-outlined text-base">volume_up</span>
+<span>ऐका</span>
+</button>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low space-y-space-sm">
+<label class="block font-headline-md text-headline-md text-on-surface">
+            तुमची शेवटची मासिक पाळी कधी सुरू झाली होती?
+          </label>
+<span class="block font-body-md text-body-md text-on-surface-variant">खालीलपैकी एक सोपे बटण दाबा:</span>
+<!-- Big Touch Date Options -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1" id="datePickerOptions">
+<button class="cycle-pill active flex flex-col items-center justify-center py-3.5 px-2 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg transition shadow-sm" onclick="selectDateOption(this, 1)" type="button">
+<span class="text-xs opacity-80">काल</span>
+<span class="font-bold">काल झाली</span>
+</button>
+<button class="cycle-pill flex flex-col items-center justify-center py-3.5 px-2 rounded-2xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition shadow-sm" onclick="selectDateOption(this, 3)" type="button">
+<span class="text-xs opacity-75">३ दिवस</span>
+<span class="font-bold">३ दिवसांपूर्वी</span>
+</button>
+<button class="cycle-pill flex flex-col items-center justify-center py-3.5 px-2 rounded-2xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition shadow-sm" onclick="selectDateOption(this, 7)" type="button">
+<span class="text-xs opacity-75">१ आठवडा</span>
+<span class="font-bold">७ दिवसांपूर्वी</span>
+</button>
+<button class="cycle-pill flex flex-col items-center justify-center py-3.5 px-2 rounded-2xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition shadow-sm" onclick="selectDateOption(this, 14)" type="button">
+<span class="text-xs opacity-75">२ आठवडे</span>
+<span class="font-bold">१४ दिवसांपूर्वी</span>
+</button>
+</div>
+</div>
+<!-- Result Card / Prediction Badge -->
+<div class="p-space-md rounded-2xl bg-tertiary-fixed/60 space-y-space-sm transition-all duration-300">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-2xl" style="font-variation-settings: 'FILL' 1;">event_upcoming</span>
+<span class="font-headline-md text-headline-md text-on-tertiary-fixed font-bold">पुढील पाळी संभाव्य तारीख:</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-md text-label-md font-bold shrink-0 self-start sm:self-auto" id="daysLeftBadge">
+              ७ दिवस बाकी
+            </span>
+</div>
+<div class="text-2xl font-bold text-tertiary" id="predictedDateText">
+            २२ नोव्हेंबर २०२४
+          </div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest/80 text-on-surface font-body-md text-body-md">
+<span class="material-symbols-outlined text-tertiary text-xl shrink-0" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+<span><strong>तयारी ठेवा:</strong> कापड किंवा नॅपकिन स्वच्छ ठेवून प्रवास व कामाचे नियोजन करा.</span>
+</div>
+</div>
+<!-- Direct Asha Notification Action -->
+<div class="flex flex-col sm:flex-row gap-space-xs pt-1">
+<button class="flex-1 min-h-[56px] px-space-md py-3 rounded-2xl bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-2 shadow-sm hover:bg-primary transition active:translate-y-0.5" onclick="sendSmsAlert()">
+<span class="material-symbols-outlined text-2xl">sms</span>
+<span>आशा ताईंकडून SMS आठवण मिळवा</span>
+</button>
+<button class="min-h-[56px] px-space-md py-3 rounded-2xl bg-surface-container-low text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition" onclick="toggleAudio('तुमची नोंद सुरक्षित ठेवली गेली आहे. दरमहा SMS द्वारे आठवण येईल.')">
+<span class="material-symbols-outlined text-xl text-primary">hearing</span>
+<span>माहिती ऐका</span>
+</button>
+</div>
+</div>
+<!-- Quick Illustrated Visualizer (Right 5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-md md:p-space-lg rounded-3xl shadow-sm flex flex-col justify-between h-full space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold">
+              शरीराची काळजी
+            </span>
+<span class="text-xs text-on-surface-variant font-label-md">२८ दिवसांचे चक्र</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">मासिक चक्र समजून घेऊया</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            प्रत्येक स्त्रीच्या शरीरात दर महिन्याला होणारा हा एक अत्यंत चांगला व नैसर्गिक बदल आहे.
+          </p>
+</div>
+<!-- Custom SVG Cycle Wheel Diagram -->
+<div class="relative w-full aspect-square max-w-[280px] mx-auto my-2 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 200 200">
+<!-- Background Ring -->
+<circle class="text-surface-container-high" cx="100" cy="100" fill="none" r="76" stroke="currentColor" stroke-width="18"></circle>
+<!-- Period Phase (Days 1-5) -->
+<circle class="text-tertiary" cx="100" cy="100" fill="none" r="76" stroke="currentColor" stroke-dasharray="80 400" stroke-dashoffset="0" stroke-width="18"></circle>
+<!-- Safe/Folate Phase -->
+<circle class="text-secondary" cx="100" cy="100" fill="none" r="76" stroke="currentColor" stroke-dasharray="140 400" stroke-dashoffset="-85" stroke-width="18"></circle>
+<!-- Preparation Phase -->
+<circle class="text-primary-container" cx="100" cy="100" fill="none" r="76" stroke="currentColor" stroke-dasharray="140 400" stroke-dashoffset="-230" stroke-width="18"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+<span class="material-symbols-outlined text-3xl text-tertiary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface mt-1">निरोगी चक्र</span>
+<span class="font-label-md text-label-md text-on-surface-variant">२१ ते ३५ दिवस</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center pt-2">
+<div class="p-2 rounded-xl bg-tertiary-fixed/40">
+<span class="block w-2.5 h-2.5 mx-auto rounded-full bg-tertiary mb-1"></span>
+<span class="block font-label-md text-label-md font-bold text-tertiary">पाळीचे दिवस</span>
+<span class="text-xs text-on-surface-variant">१ ते ५ दिवस</span>
+</div>
+<div class="p-2 rounded-xl bg-secondary-fixed/50">
+<span class="block w-2.5 h-2.5 mx-auto rounded-full bg-secondary mb-1"></span>
+<span class="block font-label-md text-label-md font-bold text-secondary">ऊर्जा दिवस</span>
+<span class="text-xs text-on-surface-variant">६ ते १४ दिवस</span>
+</div>
+<div class="p-2 rounded-xl bg-primary-fixed/50">
+<span class="block w-2.5 h-2.5 mx-auto rounded-full bg-primary mb-1"></span>
+<span class="block font-label-md text-label-md font-bold text-primary">विश्रांती वेळ</span>
+<span class="text-xs text-on-surface-variant">१५ ते २८ दिवस</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hygiene Steps: 4 Golden Rules (४ सुवर्ण नियम) -->
+<div class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+              आरोग्य रक्षण
+            </span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">मासिक पाळीतील स्वच्छता — ४ सुवर्ण नियम</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            संसर्ग टाळण्यासाठी आणि ताजेतवाने राहण्यासाठी या ४ गोष्टी न चुकता करा:
+          </p>
+</div>
+<button class="self-start sm:self-auto flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition" onclick="toggleAudio('पाळीच्या स्वच्छतेचे चार महत्त्वाचे नियम एकामागून एक ऐका')">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+<span>सर्व नियम ऐका</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-3xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+                महत्त्वाचे
+              </span>
+<button class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container-high transition" onclick="toggleAudio('नियम पहिला: दर चार ते सहा तासांनी पॅड बदला, यामुळे जंतुसंसर्ग होत नाही.')">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              १. दर ४ ते ६ तासांनी पॅड बदला
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              रक्तस्त्राव कमी असला तरीही संसर्ग आणि दुर्गंधी टाळण्यासाठी वेळेत पॅड बदलणे अत्यंत आवश्यक आहे.
+            </p>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>जंतू संसर्गापासून रक्षण</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-3xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+                महत्त्वाचे
+              </span>
+<button class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container-high transition" onclick="toggleAudio('नियम दुसरा: सुती कापड वापरत असल्यास साबणाने धुवून कडक उन्हात वाळवा. सावलीत वाळवू नका.')">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">wb_sunny</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              २. सुती कापड उन्हात कडक वाळवा
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              घरातील कापड वापरत असल्यास ते स्वच्छ धुवून लपवून न ठेवता थेट सूर्यप्रकाशात वाळवा, जेणेकरून सूक्ष्मजंतू मरतील.
+            </p>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-base">sunny</span>
+<span>उन्हामुळे निर्जंतुकीकरण</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-3xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+                महत्त्वाचे
+              </span>
+<button class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container-high transition" onclick="toggleAudio('नियम तिसरा: स्वच्छता करताना साधे पाणी वापरा. तीव्र सुगंधित रसायने वापरू नका.')">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              ३. कोमट पाण्याने शरीराची स्वच्छता
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              शौचास किंवा लघवीला जाऊन आल्यानंतर स्वच्छ पाण्याने धुवा. सुवासिक पावडर किंवा कडक साबणाचा अतिवापर टाळा.
+            </p>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">check</span>
+<span>नैसर्गिक पीएच संतुलन</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-3xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+                महत्त्वाचे
+              </span>
+<button class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container-high transition" onclick="toggleAudio('नियम चौथा: वापरलेले नॅपकिन कागदात नीट गुंडाळून कचरापेटीत टाका. उघड्यावर फेकू नका.')">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed-dim text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">delete_outline</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              ४. पॅड कागदात गुंडाळून कचऱ्यात टाका
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              वापरलेले नॅपकिन कधीही उघड्यावर फेकू नका किंवा शौचालयात फ्लश करू नका. जुन्या वर्तमानपत्रात गुंडाळून डस्टबिनमध्ये टाका.
+            </p>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">eco</span>
+<span>परिसर व गटार स्वच्छता</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Myths vs Facts (अंधश्रद्धा निवारण) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-xl rounded-3xl shadow-sm space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-md text-label-md font-bold inline-block">
+            वैज्ञानिक दृष्टिकोन
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-1">
+            गैरसमज आणि खरे सत्य — अंधश्रद्धा निवारण
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            पूर्वजांच्या काळातील जुन्या समजुती सोडून विज्ञानाची खरी माहिती जाणून घ्या:
+          </p>
+</div>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-2xl bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition self-start md:self-auto" onclick="toggleAudio('चला मासिक पाळीबद्दलचे गैरसमज आणि त्यामागचे खरे सत्य समजून घेऊया.')">
+<span class="material-symbols-outlined text-primary text-xl">record_voice_over</span>
+<span>सत्य ऐका</span>
+</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Myth Pair 1 -->
+<div class="flex flex-col rounded-2xl overflow-hidden bg-surface-container-low">
+<div class="p-space-md bg-error-container/60 space-y-space-xs">
+<div class="flex items-center gap-2 text-error font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">cancel</span>
+<span>गैरसमज (खोटे)</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">
+              "पाळीच्या वेळी लोणच्याला किंवा झाडाला हात लावल्यास ते खराब किंवा सुकते."
+            </p>
+</div>
+<div class="p-space-md bg-primary-fixed/40 space-y-space-xs flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span>वैज्ञानिक सत्य (खरे)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+<strong>नाही!</strong> लोणचे बुरशीमुळे खराब होते, पाळीमुळे नाही. पाळी ही एक नैसर्गिक शारीरिक प्रक्रिया आहे, कोणताही विटाळ किंवा अशुद्धता नाही.
+              </p>
+</div>
+<button class="mt-3 text-left font-label-md text-label-md text-primary font-bold flex items-center gap-1 hover:underline" onclick="toggleAudio('खोटे! पाळी ही केवळ शारीरिक प्रक्रिया आहे. लोणचे खराब होत नाही.')">
+<span class="material-symbols-outlined text-base">volume_up</span> ऐका
+            </button>
+</div>
+</div>
+<!-- Myth Pair 2 -->
+<div class="flex flex-col rounded-2xl overflow-hidden bg-surface-container-low">
+<div class="p-space-md bg-error-container/60 space-y-space-xs">
+<div class="flex items-center gap-2 text-error font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">cancel</span>
+<span>गैरसमज (खोटे)</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">
+              "पाळीत आंघोळ करू नये किंवा कोपऱ्यात एका जागी बसून विश्रांतीच घेतली पाहिजे."
+            </p>
+</div>
+<div class="p-space-md bg-primary-fixed/40 space-y-space-xs flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span>वैज्ञानिक सत्य (खरे)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+<strong>उलट आंघोळ करावी!</strong> कोमट पाण्याने स्वच्छ आंघोळ केल्याने शरीराचे स्नायू शिथिल होतात, कंबरदुखी कमी होते आणि ताजेतवाने वाटते.
+              </p>
+</div>
+<button class="mt-3 text-left font-label-md text-label-md text-primary font-bold flex items-center gap-1 hover:underline" onclick="toggleAudio('स्वच्छ आंघोळ केल्याने अंग ताजेतवाने राहते आणि स्नायूंचा ताण कमी होतो.')">
+<span class="material-symbols-outlined text-base">volume_up</span> ऐका
+            </button>
+</div>
+</div>
+<!-- Myth Pair 3 -->
+<div class="flex flex-col rounded-2xl overflow-hidden bg-surface-container-low">
+<div class="p-space-md bg-error-container/60 space-y-space-xs">
+<div class="flex items-center gap-2 text-error font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">cancel</span>
+<span>गैरसमज (खोटे)</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">
+              "पाळीचे रक्त अशुद्ध, घाणेरडे किंवा शरीरातील विषारी घटक असते."
+            </p>
+</div>
+<div class="p-space-md bg-primary-fixed/40 space-y-space-xs flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span>वैज्ञानिक सत्य (खरे)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+<strong>अजिबात नाही!</strong> हे रक्त शरीराच्या इतर रक्तासारखेच शुद्ध असते. बाळाच्या वाढीसाठी गर्भाशयात तयार झालेला थर गर्भधारणा न झाल्याने बाहेर पडतो.
+              </p>
+</div>
+<button class="mt-3 text-left font-label-md text-label-md text-primary font-bold flex items-center gap-1 hover:underline" onclick="toggleAudio('नाही! हे गर्भाशयाच्या अस्तराचे नैसर्गिक रक्त असते, कोणताही विषारी घटक नाही.')">
+<span class="material-symbols-outlined text-base">volume_up</span> ऐका
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Red Flag Symptoms & Direct Help (धोक्याची लक्षणे) -->
+<div class="rounded-3xl bg-surface-container-high/60 p-space-md md:p-space-xl space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+              डॉक्टरांना किंवा आशा ताईंना कधी दाखवावे?
+            </h2>
+<span class="font-label-md text-label-md text-error font-semibold">ही ३ धोक्याची लक्षणे दिसल्यास अंगावर काढू नका:</span>
+</div>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-low transition self-start sm:self-auto" onclick="toggleAudio('धोक्याची लक्षणे: अतिरक्तस्त्राव, असह्य पोटदुखी किंवा दोन महिन्यांपेक्षा जास्त दिवस पाळी न येणे.')">
+<span class="material-symbols-outlined text-base text-error">volume_up</span>
+<span>लक्षणे ऐका</span>
+</button>
+</div>
+<!-- Symptoms 3-Card Stack -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">bloodtype</span>
+</div>
+<div class="space-y-1">
+<span class="block font-headline-md text-headline-md text-on-surface font-bold">अतिप्रमाणात रक्तस्त्राव</span>
+<span class="font-body-md text-body-md text-on-surface-variant">दर १ ते २ तासांत पॅड पूर्ण ओले होणे आणि मोठे रक्ताचे गोळे पडणे.</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">sentiment_very_dissatisfied</span>
+</div>
+<div class="space-y-1">
+<span class="block font-headline-md text-headline-md text-on-surface font-bold">तीव्र पोटदुखी</span>
+<span class="font-body-md text-body-md text-on-surface-variant">घरगुती शेकण्याने किंवा विश्रांतीनेही असह्य वेदना कमी न होणे.</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">hourglass_disabled</span>
+</div>
+<div class="space-y-1">
+<span class="block font-headline-md text-headline-md text-on-surface font-bold">अनियमित चक्र</span>
+<span class="font-body-md text-body-md text-on-surface-variant">दोन ते तीन महिन्यांपेक्षा जास्त दिवस पाळी न येणे किंवा सतत येणे.</span>
+</div>
+</div>
+</div>
+<!-- Direct Assistance Actions -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-2">
+<a class="w-full sm:w-auto flex-1 min-h-[56px] px-space-lg py-3 rounded-2xl bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-3 shadow-md hover:bg-primary transition active:translate-y-0.5" href="tel:104">
+<span class="material-symbols-outlined text-2xl">call</span>
+<span>आशा ताईंना विचारा (थेट संपर्क)</span>
+</a>
+<a class="w-full sm:w-auto min-h-[56px] px-space-lg py-3 rounded-2xl bg-surface-container-lowest text-secondary font-headline-md text-headline-md flex items-center justify-center gap-3 shadow-sm hover:bg-surface-container-low transition active:translate-y-0.5" href="tel:104">
+<span class="material-symbols-outlined text-2xl text-secondary">support_agent</span>
+<span>१०४ शासकीय आरोग्य सल्ला (मोफत)</span>
+</a>
+</div>
+</div>
+<!-- Government Support Banner (अस्मिता योजना) -->
+<div class="relative overflow-hidden rounded-3xl bg-surface-container-lowest p-space-md md:p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">card_membership</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold">
+              महाराष्ट्र शासन योजना
+            </span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">अस्मिता योजना</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+            अंगणवाडीतून मिळणारे ₹१ चे अनुदानित सॅनिटरी नॅपकिन्स
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            गावातील जिल्हा परिषद शाळांतील मुली आणि महिलांसाठी अस्मिता कार्डवर अत्यंत माफक दरात दर्जेदार पॅड्स उपलब्ध.
+          </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row md:flex-col gap-2 w-full md:w-auto shrink-0">
+<button class="min-h-[50px] px-space-md py-2.5 rounded-2xl bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition flex items-center justify-center gap-2" onclick="alert('तुमच्या गावातील अंगणवाडी सेविका किंवा आशा ताईंशी संपर्क करून अस्मिता योजनेचा लाभ घ्या.')">
+<span class="material-symbols-outlined text-primary text-xl">info</span>
+<span>पात्रता व माहिती पहा</span>
+</button>
+<button class="min-h-[50px] px-space-md py-2.5 rounded-2xl bg-surface-container-low text-primary font-label-md text-label-md hover:bg-primary-fixed transition flex items-center justify-center gap-1.5" onclick="toggleAudio('अस्मिता योजनेअंतर्गत अंगणवाडीमध्ये सॅनिटरी नॅपकिन फक्त एक रुपयात मिळतात.')">
+<span class="material-symbols-outlined text-lg">volume_up</span>
+<span>योजना माहिती ऐका</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Audio Floating Feedback SnackBar -->
+<div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 hidden bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-full shadow-2xl flex items-center gap-3 max-w-md w-[90%] sm:w-auto" id="audioToast">
+<div class="w-3 h-3 rounded-full bg-primary-fixed animate-ping"></div>
+<span class="material-symbols-outlined text-primary-fixed text-xl">graphic_eq</span>
+<span class="font-body-md text-body-md truncate" id="audioToastText">आवाज मार्गदर्शक सुरू आहे...</span>
+<button class="ml-auto text-xs px-2 py-1 rounded-full bg-surface-container-highest text-on-surface font-bold" onclick="dismissToast()">थांबवा</button>
+</div>
+</div>
+<script>
+  function toggleAudio(message) {
+    var toast = document.getElementById('audioToast');
+    var toastText = document.getElementById('audioToastText');
+    if (!toast || !toastText) return;
+    
+    toastText.innerText = message || 'माहिती मोठ्याने वाचली जात आहे...';
+    toast.classList.remove('hidden');
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      var utterance = new SpeechSynthesisUtterance(message);
+      utterance.lang = 'mr-IN';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+      
+      utterance.onend = function() {
+        setTimeout(function() {
+          toast.classList.add('hidden');
+        }, 1500);
+      };
+    } else {
+      setTimeout(function() {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+  }
+
+  function dismissToast() {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    var toast = document.getElementById('audioToast');
+    if (toast) toast.classList.add('hidden');
+  }
+
+  function selectDateOption(btn, daysAgo) {
+    var buttons = document.querySelectorAll('#datePickerOptions .cycle-pill');
+    buttons.forEach(function(b) {
+      b.className = 'cycle-pill flex flex-col items-center justify-center py-3.5 px-2 rounded-2xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition shadow-sm';
+    });
+
+    btn.className = 'cycle-pill active flex flex-col items-center justify-center py-3.5 px-2 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg transition shadow-sm';
+
+    var today = new Date();
+    var lastPeriod = new Date();
+    lastPeriod.setDate(today.getDate() - daysAgo);
+
+    var nextPeriod = new Date(lastPeriod);
+    nextPeriod.setDate(lastPeriod.getDate() + 28);
+
+    var diffTime = nextPeriod - today;
+    var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    if (diffDays < 0) diffDays = 0;
+
+    var monthsMarathi = [
+      'जानेवारी', 'फेब्रुवारी', 'मार्च', 'एप्रिल', 'मे', 'जून',
+      'जुलै', 'ऑगस्ट', 'सप्टेंबर', 'ऑक्टोबर', 'नोव्हेंबर', 'डिसेंबर'
+    ];
+
+    var dateString = nextPeriod.getDate() + ' ' + monthsMarathi[nextPeriod.getMonth()] + ' ' + nextPeriod.getFullYear();
+
+    var predDateEl = document.getElementById('predictedDateText');
+    var badgeEl = document.getElementById('daysLeftBadge');
+
+    if (predDateEl) predDateEl.innerText = dateString;
+    if (badgeEl) badgeEl.innerText = diffDays + ' दिवस बाकी';
+
+    toggleAudio('पुढील पाळी संभाव्य तारीख ' + dateString + ' आहे. अजून ' + diffDays + ' दिवस बाकी आहेत.');
+  }
+
+  function sendSmsAlert() {
+    alert('नोंदणी यशस्वी! आशा ताईंच्या डिजिटल वहीत नोंद झाली असून पाळीच्या ३ दिवस आधी तुम्हाला मोफत SMS आठवण येईल.');
+    toggleAudio('नोंदणी झाली आहे. तुम्हाला वेळेवर आठवणीचा मेसेज पाठवला जाईल.');
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_8px_rgba(27,131,84,0.05)]"><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-lg items-center"><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center"><span class="material-symbols-outlined text-2xl">emergency</span></div><div><span class="block font-headline-md text-headline-md text-error font-bold">१०८ / १०४ रुग्णवाहिका</span><span class="font-body-md text-body-md text-on-surface-variant">मोफत २४ तास शासकीय आपत्कालीन सेवा</span></div></div><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-2xl">record_voice_over</span></div><div><span class="block font-headline-md text-headline-md text-primary font-bold">आवाज मार्गदर्शन उपलब्ध</span><span class="font-body-md text-body-md text-on-surface-variant">कोणत्याही पानावर वरचा हिरवा माइक दाबा</span></div></div><div class="bg-surface-container-low p-space-md rounded-2xl flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-2xl">child_care</span></div><div><span class="block font-headline-md text-headline-md text-secondary font-bold">१०९८ बाल मदत केंद्र</span><span class="font-body-md text-body-md text-on-surface-variant">माता आणि बाल आरोग्य सल्लागार</span></div></div></div><div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-2xl">volunteer_activism</span><span class="font-body-lg text-body-lg text-on-surface font-medium">आरोग्य ज्ञानातून सक्षम कुटुंब आणि संपन्न गाव. आपल्या हक्काची सोपी आरोग्य माहिती.</span></div><div class="font-label-md text-label-md text-on-surface-variant text-center md:text-right">© २०२४ आरोग्यसाथी (AarogyaSathi) | सार्वजनिक आरोग्य जागरूकता व्यासपीठ</div></div></div></footer></body></html>
